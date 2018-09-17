@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>The Tailored Recipes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="StyleSheet.css" rel="stylesheet" type="text/css">
+<!--Social media sprite library-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<body>
+<!--NAVIGATION-->
+<nav class="w3-bar w3-black">
+    <a href="#home" class="w3-button w3-bar-item">Home</a>
+    <a href="#band" class="w3-button w3-bar-item">Recipes</a>
+    <a href="#tour" class="w3-button w3-bar-item">Cookbook</a>
+    <a href="#contact" class="w3-button w3-bar-item">Blog</a>
+
+    <!--SEARCH CONTAINER-->
+      <form action="/action_page.php" class="search-container">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+</nav>
+
+
+
+<!--SLIDESHOW-->
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="egg-avocado.jpg"
+  style="width:100%">
+  <img class="mySlides" src="lunch.jpg"
+  style="width:100%">
+  <img class="mySlides" src="pancake.jpg"
+  style="width:100%">
+</section>
+
+<!-- Description -->
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">THE TAILORED RECIPES</h2>
+  <p class="w3-opacity"><i>Cooking is our passion</i></p>
+  <p class="w3-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</section>
+
+<!-- Featured Dishes -->
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+    <p>Egg avocado</p>
+    <img src="egg-avocado.jpg" alt="Egg Avocado" style="width:100%">
+    <p>Cooked-to-order egg is lightly drizzled with bold avocado and served with a smoky, farm-fresh charred vegetable medley.</p>
+  </article>
+  <article class="w3-third">
+    <p>Burger Au Lorem</p>
+    <img src="breakfast.jpg" alt="Burger Au Lorem" style="width:100%">
+    <p>With sliced California Haas avocado, crumbled Bleu cheese and crisp hardwood smoked bacon. </p>
+  </article>
+  <article class="w3-third">
+    <p>Le Pancake</p>
+    <img src="pancake.jpg" alt="pancake" style="width:100%">
+    <p>Buttermilk pancakes with whipped butter, orange, a fried egg and grilled blueberries. </p>
+  </article>
+</section>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-instagram"></i></a>
+  <p class="w3-medium">
+<a href="#">All rights reserved by The Tailored Recipe.</a>
+  </p>
+</footer>
+
+
+
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 7000);
+}
+</script>
+
+</body>
+</html>
